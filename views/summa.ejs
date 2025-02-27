@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random joke</title>
+    <link rel="stylesheet" href="/styles/summa.css">
+</head>
+<body>
+    <div class="box">
+        <div class="random-joke">
+            <% if(locals.ini) {%>
+                <h1 id="ini"><%= ini %></h1>
+            <% } else { %>
+                <h1 id="type">
+                    <%= data.type %>
+                </h1>
+                <h3 id="joke_q">
+                    <%= data.setup %>
+                </h3>
+                <h3 id="joke_a">
+                    <%= data.punchline %>
+                </h3>
+            <% } %>
+            <form action="/submit" method="POST">
+                <button id="btn" type="submit">Get a Random Joke</button>
+            </form>            
+        </div>
+    </div>
+</body>
+</html>

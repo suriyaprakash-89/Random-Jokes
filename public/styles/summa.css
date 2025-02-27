@@ -1,0 +1,52 @@
+body {
+    background-color: #D3D3D3;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#type{
+    font-weight: 900;
+    color: #333333;
+    text-decoration:underline;
+    text-transform: capitalize;
+}
+#joke_q{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0066CC;
+}
+
+#joke_a{
+    font-family: 'Courier New', Courier, monospace;
+    color: #FF6600;
+}
+
+.random-joke{
+    background-color: #F0F0F0;
+    padding: 20px;
+    text-align: center;
+    height: max-content;
+    width: max-content;
+    border-radius: 10px;
+}
+#ini{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(81, 6, 167);
+    text-transform: capitalize;
+}
+button {
+    background-color: #007bff; /* Blue color */
+    color: white; /* Text color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #02172c; /* Darker blue on hover */
+}
